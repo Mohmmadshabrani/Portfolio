@@ -17,12 +17,11 @@
 <body>
   <section class="nav">
     <a href="#Home">Home</a>
-    <a href="#About">About</a>
     <a href="#Projects">Project</a>
     <a href="#Contact">Contact</a>
+    <input class="darkModeToggler" type="checkbox">
     <select class="menu" id="menu">
       <option value=""><a href="#Home">Home</a></option>
-      <option value="">About</option>
       <option value="">Project</option>
       <option value="">Contact</option>
     </select>
@@ -34,7 +33,7 @@
           <div class="secondCir cir  " data-value="2">
             <div class="ThirdCir cir  " data-value="3">
               <div class="forthCir cir " data-value="4">
-                <img src="./resources/logoo.png" alt="">
+                <img class="logoImg" src="./resources/logoo.png" alt="">
               </div>
             </div>
           </div>
@@ -96,24 +95,29 @@
       <h1  class="Hover_effect">Projects</h1>
       <div class="cards_div">
         <div class="card " style="width: 18rem;">
-          <img class="card-img-top" src="./resources/logo.png" alt="Card image cap">
+          <img class="card-img-top" src="./resources/logo.jpg" alt="Card image cap">
+          <div class="label">SoftCoreTech</div>
           <div class="card-body">
             <p class="card-text">a C# ASP.NET Windows software for efficient Sales and Inventory Management. It utilizes a Microsoft SQL database, offering features like product management, customer tracking, order processing, inventory control, and reporting, enabling businesses to streamline their operations effectively.</p>
           </div>
         </div>
         <div class="card " style="width: 18rem;">
           <a href="https://mohmmadshabrani.github.io/knapsack/"><img class="card-img-top imgDivLogo" src="./resources/Screenshot 2023-07-06 033635.png" alt="Card image cap"></a>
+          <div class="label">Gen-sack</div>
           <div class="card-body">
             <p class="card-text"> a customizable Knapsack solving program developed using JavaScript, HTML, and CSS. This program empowers users to define the number of generations for the evolutionary algorithm to find the optimal solution to the knapsack problem</p>
           </div>
         </div>
         <div class="card" style="width: 18rem;">
           <img class="card-img-top" src="./resources/Su00XUA.png" alt="Card image cap">
+          <div class="MNIST">MNIST digit recognition </div>
+
           <div class="card-body">
             <p class="card-text "> an AI digit recognition model that accurately identifies and classifies handwritten or digital digits using deep learning techniques. The model enables seamless integration into applications such as OCR, form processing, and data analysis</p>
           </div>
         </div>
       </div>
+
     </section>
 
     <section class="Skills">
