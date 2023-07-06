@@ -9,94 +9,32 @@
   <link href="https://fonts.googleapis.com/css2?family=Thasadith&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/49fd0aae10.js" crossorigin="anonymous">
   </script>
-
-  <link rel="stylesheet" href="style.css">
+  <script defer src="./Scripts/Script.js"></script>
+  <link rel="stylesheet" href="./styles/style.css">
   <title>Portfolio</title>
-
-  <style>
-    @media only screen and (max-width: 927px) {
-      .nav {
-        width: 12%;
-
-        & a {
-          display: none !important;
-        }
-
-        & .menu {
-          display: block !important;
-        }
-      }
-    }
-    footer{
-      color: transparent;
-      padding: 0;
-        background-color: rgba(61, 60, 60, 0.839);
-        margin: 0 auto;
-        width: 35%;
-        min-width: 2vh;
-        height: 3.8vw;
-        max-height: 120px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        border-radius: 50px;
-        & i{
-          color: #fff;
-          font-size: min(2vw , 35px);
-        }
-
-      }
-    .IDK2{
-      display: flex;
-      flex-direction: column;
-      /* gap:6rem ; */
-    }
-    button{
-      border-style: none;
-      width: 25vmin;
-      height: 8vmin;
-      margin-top: 10vmin;
-      border-radius: 50vmin;
-      transition: all .5s;
-      & a{
-        text-decoration: none;
-        color: #333 !important;
-    }
-    }
-    button:hover{
-      background-color: #333;
-      box-shadow: 0 0 5px rgba(37, 37, 37, 0.61);
-      & a{
-        color: #ffffffff !important;
-      }
-    }
-  </style>
-
-
 </head>
 
 <body>
   <section class="nav">
-    <a href="">Home</a>
-    <a href="">About</a>
-    <a href="">Project</a>
-    <a href="">Contact</a>
+    <a href="#Home">Home</a>
+    <a href="#About">About</a>
+    <a href="#Projects">Project</a>
+    <a href="#Contact">Contact</a>
     <select class="menu" id="menu">
-      <option value="">Home</option>
+      <option value=""><a href="#Home">Home</a></option>
       <option value="">About</option>
       <option value="">Project</option>
       <option value="">Contact</option>
     </select>
   </section>
-
-  <div class="wrapper">
-    <section class="NameLogo">
+  <div class="wrapper" >
+    <section class="NameLogo" id="Home">
       <blockquote class="logo">
         <div class="firstCir cir  " data-value="2">
           <div class="secondCir cir  " data-value="2">
             <div class="ThirdCir cir  " data-value="3">
               <div class="forthCir cir " data-value="4">
-                <img src="logoo.png" alt="">
+                <img src="./resources/logoo.png" alt="">
               </div>
             </div>
           </div>
@@ -110,8 +48,11 @@
           <div class="postion">
             FullStack web developer
           </div>
+          <div class="objectivessamme">
+            Embarking on a journey to become a proficient full stack web developer,<br> equipped with comprehensive skills and knowledge to create dynamic and robust web applications
+          </div>
         </div>
-        <div><button><a href="Resume.docx">Donwload CV</a></button></div>
+        <div><button><a href="./resources/Resume.docx">Donwload CV</a></button></div>
       </blockquote>
     </section>
     <div class="Dparent">
@@ -122,26 +63,16 @@
       <div class="DFifth"></div>
     </div>
     <main>
-      <section class="objective" id="Home">
-        <section class="Objcontent">
-          <h1 class="Hover_effect">objectives</h1>
-          <p class="Hover_effect MainObj">My main objective is to consistently deliver  high-quality web solutions that meet client requirements and exceed expectations. I aim to develop robust and scalable applications ensuring seamless user experiences and optimal performance.</p>
-          <p class="Hover_effect">Effective collaboration: Collaborate with cross-functional teams to successfully execute web development projects, ensuring efficient project delivery and client satisfaction.</p>
-          <p class="Hover_effect">Stay updated with technology trends: Continuously enhance skills and stay updated with the latest web development technologies and industry trends, leveraging the most effective to build modern and innovative applications.</p>
-          <p class="Hover_effect">Code quality and maintainability: Write clean, modular, and maintainable code, following best practices and implementing rigorous testing and debugging processes to deliver efficient, , and easily maintainable solutions.</p>
-        </section>
-        <section class="ObJillus"><img src="illust.svg"></section>
-      </section>
-      <p class="para1">Education</p>
+      <p class="para1 Hover_effect">Education</p>
       <section class="Education">
         <section class="FristHalf">
           <div class="textWrapper ">
-            <div class="text barEle"><p>university of jordan</p> <p>2021-present</p> </div>
+            <div class="text barEle"><p class="Hover_effect">University of Jordan</p> <p>2021/OCT - Present</p> </div>
             <div class="Unibar lanBAr barEle"></div>
           </div>
 
           <div class="textWrapper ">
-            <div class="text barEle"><p>Orange fabLab</p> <p>2022-2022</p> </div>
+            <div class="text barEle"><p class="Hover_effect">Orange FabLab</p> <p>2022/APR-2022/MAY</p> </div>
           <div class="Corusebar lanBAr barEle"></div>
         </div>
 
@@ -150,34 +81,34 @@
         <div class="bar"></div>
         <section class="SecondHalf">
           <div class="textWrapper ">
-            <div class="text barEle"><p>orange coding academy</p> <p>2023-present</p> </div>
+            <div class="text barEle"><p class="Hover_effect">Orange Coding Academy</p> <p>2023/JUN-Present</p> </div>
           <div class="fabLabBar lanBAr barEle"></div>
         </div>
 
         <div class="textWrapper ">
-          <div class="text barEle"><p>GamingLab Unity</p> <p>2021-2022</p> </div>
+          <div class="text barEle"><p class="Hover_effect">GamingLab Unity</p> <p>2021/NOV-2022/JAN</p> </div>
           <div class="gamingLabBar lanBAr barEle"></div>
         </div>
         </section>  
     </section>
     
-    <section class="Projects">
-      <h1 id="Projects">Projects</h1>
+    <section class="Projects" id="Projects">
+      <h1  class="Hover_effect">Projects</h1>
       <div class="cards_div">
         <div class="card " style="width: 18rem;">
-          <img class="card-img-top" src="./logo.png" alt="Card image cap">
+          <img class="card-img-top" src="./resources/logo.png" alt="Card image cap">
           <div class="card-body">
             <p class="card-text">a C# ASP.NET Windows software for efficient Sales and Inventory Management. It utilizes a Microsoft SQL database, offering features like product management, customer tracking, order processing, inventory control, and reporting, enabling businesses to streamline their operations effectively.</p>
           </div>
         </div>
         <div class="card " style="width: 18rem;">
-          <img class="card-img-top imgDivLogo" src="./logoo.png" alt="Card image cap">
+          <a href="https://mohmmadshabrani.github.io/knapsack/"><img class="card-img-top imgDivLogo" src="./resources/Screenshot 2023-07-06 033635.png" alt="Card image cap"></a>
           <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam repellendus earum ipsam ut possimus ea sit asperiores magnam dolores illum explicabo cumque ex quaerat laborum fugiat modi, libero quis necessitatibus atque corporis voluptatum ratione dolor! Ipsum dolorem eveniet eos error!</p>
+            <p class="card-text"> a customizable Knapsack solving program developed using JavaScript, HTML, and CSS. This program empowers users to define the number of generations for the evolutionary algorithm to find the optimal solution to the knapsack problem</p>
           </div>
         </div>
         <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="./Su00XUA.png" alt="Card image cap">
+          <img class="card-img-top" src="./resources/Su00XUA.png" alt="Card image cap">
           <div class="card-body">
             <p class="card-text "> an AI digit recognition model that accurately identifies and classifies handwritten or digital digits using deep learning techniques. The model enables seamless integration into applications such as OCR, form processing, and data analysis</p>
           </div>
@@ -186,80 +117,58 @@
     </section>
 
     <section class="Skills">
+      <h1>Skills</h1>
+      <div class="langs">
 
+          <div class="html Great">
+            <div><i class="fa-brands fa-html5"></i></div>
+            <div><p>HTML</p></div>
+          </div>
+
+          <div class="css Great">
+            <div><i class="fa-brands fa-css3-alt"></i></div>
+            <div><p>CSS</p></div>
+          </div>
+
+          <div class="js Great">
+            <div><i class="fa-brands fa-js"></i></div>
+            <div><p>JavaScript</p></div>
+          </div>
+
+          <div class="cSharp Great">
+            <div><span>C#</span></div>
+            <div><p>Csharp</p></div>
+          </div>
+
+          <div class="sql Great">
+            <div><i class="fa-solid fa-database"></i></div>
+            <div><p>SQL </p></div>
+          </div>
+
+          <div class="cpp Great">
+            <div><span>C++</span></div>
+            <div><p>CPP</p></div>
+          </div>
+
+          <div class="py Good">
+            <div><i class="fa-brands fa-python"></i></div>
+            <div><p>Python</p></div>
+          </div>
+
+          <div class="java Good">
+            <div><i class="fa-brands fa-java"></i></div>
+            <div><p>Java</p></div>
+          </div>
+      </div>
     </section>
-    <footer>
+    <footer id="Contact">
         <a href=""><i class="fa-solid fa-phone"></i></a>
-        <a><i class="fa-solid fa-envelope"></i></a>
-        <a><i class="fa-brands fa-github"></i></a>
-        <a><i class="fa-brands fa-twitter"></i></a>
-        <a><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto: Mohammad.A.shabrani@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com/Mohmmadshabrani" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://twitter.com/Whiteblade_" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/mohammad-shabrani-bb0036234/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
     </footer>
 
 </main>
 </body>
-
-
-<script>
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      if (entry.target.classList.contains('Unibar') || entry.target.classList.contains('Corusebar')) {
-       entry.target.classList.add('show-to-right');
-        }
-
-      if (entry.target.classList.contains('fabLabBar') || entry.target.classList.contains('gamingLabBar')) {
-        entry.target.classList.add('slide-from-left');
-        }
-        if (entry.target.classList.contains('text')) {
-        const paragraphs = entry.target.querySelectorAll('p');
-        paragraphs.forEach((p) => p.classList.add('fadeText'));
-      }
-    }
-    else
-    {
-      entry.target.classList.remove('slide-from-left');
-      entry.target.classList.remove('show-to-right');
-      if (entry.target.classList.contains('text')) {
-        const paragraphs = entry.target.querySelectorAll('p');
-        paragraphs.forEach((p) => p.classList.remove('fadeText'));
-      }
-    }
-  });
-});
-
-
-const HiddenElements = document.querySelectorAll('.barEle');
-HiddenElements.forEach((el) => observer.observe(el));
-  document.addEventListener("mousemove", parallax);
-  function parallax(e) {
-    document.querySelectorAll(".cir").forEach(function (move) {
-
-      var moving_value = move.getAttribute("data-value");
-      var x = e.clientX * moving_value / 450;
-      var y = e.clientY * moving_value / 450;
-
-      move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
-    });
-  }
-  const paragraphs = document.querySelectorAll('.Hover_effect');
-
-  paragraphs.forEach(paragraph => {
-    const text = paragraph.textContent;
-    const letters = text.split('');
-    paragraph.innerHTML = letters.map(letter => {
-      if (letter === " ") {
-        return `<span>&nbsp;</span>`;
-      } else {
-        return `<span>${letter}</span>`;
-      }
-    }).join('');
-  });
-
-</script>
-
 </html>
-
-
-
-
