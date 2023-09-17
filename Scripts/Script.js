@@ -14,6 +14,15 @@ const observer = new IntersectionObserver((entries) => {
        entry.target.classList.add('show-to-right');
         }
 
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              if (entry.target.classList.contains('Unibar') || entry.target.classList.contains('Corusebar')) {
+               entry.target.classList.add('show-to-right');
+                }
+
+
       if (entry.target.classList.contains('fabLabBar') || entry.target.classList.contains('gamingLabBar')) {
         entry.target.classList.add('slide-from-left');
         }
