@@ -112,3 +112,4 @@ HiddenElements.forEach((el) => observer.observe(el));
     const logo = document.querySelector('.logoImg');
     logo.style.filter = 'invert(0%)';
   }
+}
